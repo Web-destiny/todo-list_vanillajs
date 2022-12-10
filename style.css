@@ -30,6 +30,22 @@
     border-radius: 10px;
     background-color: white;
 }
+h1 {
+    color: white;
+}
+
+label {
+    color: white;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.todo-content-item.highlight{
+    background-color: #acff4b;
+}
+.todo-content-item p.highlight{
+    text-decoration: line-through;
+}
 
 .todo-input-block {
     padding: 10px 20px;
@@ -61,4 +77,15 @@ button.btn.btn-primary.todo-remove-button {
 }
 button.btn.btn-primary.todo-remove-button:hover {
     background-color: #de1138;
+}
+
+button.btn.btn-primary.todo-highlight-button {
+    border-radius: 50%;
+    background-color: #6fe17a;
+    border: none;
+    font-weight: 700;
+    margin-right: 5px;
+}
+button.btn.btn-primary.todo-highlight-button:hover {
+    background-color: #18de11;
 }
