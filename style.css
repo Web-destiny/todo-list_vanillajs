@@ -1,10 +1,15 @@
 .todo{
-    border: 2px solid black;
     min-height: 0px;
     width: 100%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-image: url(fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .todo-content {
@@ -19,10 +24,11 @@
 .todo-content-item{
     width: 100%;
     min-height: 70px;
-    border: 2px solid black;
     padding: 5px 10px;
     display: flex;
     align-items: center;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .todo-input-block {
@@ -38,9 +44,21 @@
 input#todo-input {
     width: 100%;
     padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
 }
 
 .todo-content-item p {
     margin: 0;
     width: 100%
+}
+
+button.btn.btn-primary.todo-remove-button {
+    border-radius: 50%;
+    background-color: #e16f85;
+    border: none;
+    font-weight: 700;
+}
+button.btn.btn-primary.todo-remove-button:hover {
+    background-color: #de1138;
 }

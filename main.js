@@ -3,10 +3,10 @@ let i = 0;
 
 
 let todoInput = document.querySelector('.todo-input').addEventListener('keydown', function(event) {
-    if (event.keyCode === 13) {
+    if (event.keyCode === 13 && this.value!== '') {
         i++
         let res = `<div class="todo-content-item"><p>${this.value}</p>
-            <button class="btn btn-primary todo-remove-button" data-token="token${i}">Удалить</button>
+            <button class="btn btn-primary todo-remove-button" data-token="token${i}">X</button>
         </div>`
         todoContent.innerHTML += res
         localStorage.setItem(`token${i}`, res)
